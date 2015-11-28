@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Open Editors
+Bundle-SymbolicName: com.hivemobile.eclipse.plugin;singleton:=true
+Bundle-Version: 1.0.1
+Bundle-Activator: com.hivemobile.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.ui.ide;bundle-version="3.8.2",
+ org.eclipse.core.resources;bundle-version="3.8.1"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: org.eclipse.ui.part
+Bundle-Vendor: hivemobile
+Export-Package: com.hivemobile;uses:="org.eclipse.jface.resource,org.eclipse.ui.plugin,org.osgi.framework",
+ com.hivemobile.helpers;uses:="org.eclipse.ui,com.hivemobile.models",
+ com.hivemobile.models;uses:="org.eclipse.ui",
+ com.hivemobile.views;
+  uses:="org.eclipse.ui,
+   org.eclipse.swt.graphics,
+   org.eclipse.jface.viewers,
+   org.eclipse.ui.part,
+   org.eclipse.swt.widgets,
+   org.eclipse.jface.dialogs"
